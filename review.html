@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/review.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="isinav">
+            <div class="brand">
+                <div class="name">Movie</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="rekomendasi.html">Rekomendasi</a></li>
+                <li><img src="/img/batgerak.gif" alt=".."</li>
+            </ul>
+        </nav>
+        <hr>
+            <div class="content">
+                <div class="title">Review</div>
+                <form action="isi">
+                    <div class="user">
+                        <div class="inputan"></div>
+                        <span class="details">Nama </span>
+                        <input type="text" placeholder="Masukan Nama" required>
+                    </div>
+                    <div class="user">
+                        <div class="inputan"></div>
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Masukan Email" required>
+                    </div>
+                    <div class="user">
+                        <div class="inputan"></div>
+                        <span class="details">No Hp </span>
+                        <input type="text" placeholder="Masukan Nomor Hp" required>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <span class="gender-title">Gender </span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Laki-laki</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Perempuan</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="judul">
+                        <div class="inputan"></div>
+                        <span class="details">Judul </span>
+                        <input type="text" placeholder="Masukan Judul Film" required>
+                    </div>
+                    <div class="review">
+                        <div class="inputan"></div>
+                        <span class="details">Review</span>
+                        <!-- <input type="text" placeholder="Isi Review" required> -->
+                        <textarea type="text" placeholder="Isi Review" rows="0" cols="0" required> 
+                        </textarea>
+                    </div>
+                    <div class="user">
+                        <div class="inputan"></div>
+                        <span class="details">Kategori Rating </span>
+                        <select class="select" name="Rating" required>
+                            <option>SU (Semua Umur)</option>
+                            <option>13+</option>
+                            <option>17+</option>
+                        </select>
+                    </div>
+                    <div class="input-gambar">
+                        <span class="details">Poster Film </span>
+                        <label class="button_img">
+                        <input type="file" name="gambar" required />
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Genre</span>
+                        <div class="topp">
+                            <input class="checkbox" type="checkbox" id="horror">
+                            <label class="check" for="horror">Horror</label>
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="komedi">
+                            <label class="check" for="komedi">Komedi</label>
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="romance">
+                            <label class="check" for="romance">Romance</label>
+                        </div>
+                        <div>
+                            <input class="checkbox2" type="checkbox" id="action">
+                            <label class="check" for="action">Action</label>
+                        </div>
+                        <div>
+                            <input class="checkbox2" type="checkbox" id="thriller">
+                            <label class="check" for="thriller">Thriller</label>
+                        </div>
+                    </div>
+                    <div class="button"> 
+                        <input type="Submit" value="Upload">
+                    </div>
+                </form>   
+            </div>
+    </div>
+    <hr>
+        <footer class="ini footer">
+            <p>Mifthahuddin</p>
+            <p>2023</p>
+        </footer>
+</body>
+
+</html>
